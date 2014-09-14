@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fr" ng-app="dcWikiApp">
+
+<head>
+    <meta charset="utf-8">
+    <title>Wiki de Dahu</title>
+    <link rel="stylesheet" href="/wiki/public/lib/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="/wiki/public/css/style.css">
+    <script src="/wiki/public/lib/angular/angular.js"></script>
+    <script src="/wiki/public/lib/angular-resource/angular-resource.js"></script>
+    <script src="/wiki/public/lib/angular-route/angular-route.js"></script>
+    <script src="/wiki/public/service/dc-wiki-formateur.js"></script>
+    <script src="/wiki/public/service/dc-wiki-resource.js"></script>
+    <script src="/wiki/public/controller/dc-wiki.js"></script>
+</head>
+
+<body>
+    <h1>Mise au point des scripts de conversion</h1>
+    <a href="#/">Accueil</a>
+    <div ng-view></div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="WikiLegend">
+                        Wiki standard
+                        <br />*bold*
+                        <br />_italic_
+                        <br />+underline+
+                        <br />! heading1
+                        <br />!! heading2
+                        <br />-liste non ordonnées
+                        <br />--liste non ordonnées indentée
+                        <br />#ordonnée
+                        <br />##ordonnée indentée
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <div class="WikiLegend">
+                        Personal wiki
+                        <br />*bold*
+                        <br />=italic=
+                        <br />_underline_
+                        <br />+ heading1
+                        <br />++ heading2
+                        <br />-liste non ordonnées
+                        <br />--liste non ordonnées indentée
+                        <br />#ordonnée
+                        <br />##ordonnée indentée
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

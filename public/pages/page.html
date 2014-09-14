@@ -1,0 +1,13 @@
+<div class="row page">
+    <div class="col-sm-12">
+        <div ng-hide="edition">
+            <p ng-bind-html="pagehtml"></p>
+        </div>
+        <div ng-show="edition">
+            <textarea ng-model="pagecontenu" cols="120" rows="40"></textarea>
+        </div>
+    </div>
+</div>
+<div class="well well-sm">
+    <span class="label label-default">date mise à jour</span>
+</div>
