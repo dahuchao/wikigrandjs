@@ -9,7 +9,7 @@ var app = express();
 app.use(express.urlencoded());
 app.use(express.json());
 // traitement des pages publiques
-app.use('/wiki', express.static('D:\\Travail\\Etudes\\wikigrandjs\\public'));
+app.use('/wiki', express.static('D:\\Travail\\Chantiers\\wikigrandjs\\public'));
 // traitement des requêtes pour des documents du wiki
 //app.use('/wiki/#/doccccccccccccccccccs', //express.static('C:\\Users\\GRANDIERE\\Dropbox\\PersonalWiki\\Wiki_documents'));
 
